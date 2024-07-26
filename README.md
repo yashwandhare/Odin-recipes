@@ -20,7 +20,7 @@ Welcome to the Indian Cuisine Recipes project! This project is a collection of r
 
 You can view the live version of this project directly on GitHub Pages. The website is accessible from the following URL:
 
-[https://yashwandhare.github.io/Odin-recipes/](https://yashwandhare.github.io/Odin-recipes/)
+[https://yashwandhare.github.io/Thali.com/](https://yashwandhare.github.io/Thali.com/)
 
 To view the website locally:
 
