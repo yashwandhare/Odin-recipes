@@ -1,4 +1,4 @@
-# Odin-recipes
+# Thali.com
 # Indian Cuisine Recipes
 
 Welcome to the Indian Cuisine Recipes project! This project is a collection of recipes for traditional Indian dishes. It's part of my learning journey from The Odin Project, and it's designed to showcase some of the most popular and beloved recipes from Indian cuisine.
@@ -15,6 +15,7 @@ Welcome to the Indian Cuisine Recipes project! This project is a collection of r
 - `butter_chicken.html`: Recipe for Butter Chicken.
 - `garlic_naan.html`: Recipe for Garlic Naan.
 - `paneer_butter_masala.html`: Recipe for Paneer Butter Masala.
+- `Pav_bhaji.html`:Recipe for Pav bhaji.
 
 ## How to View
 
@@ -26,7 +27,7 @@ To view the website locally:
 
 1. **Clone the Repository**: 
    ```bash
-   git clone https://github.com/yashwandhare/Odin-recipes.git
+   git clone https://github.com/yashwandhare/Thali.com.git
 
 ## How to contribute  
 
