@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    background-color: whitesmoke;
+    color: rgb(13, 13, 13);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 20px;
+    padding-inline: 100px
+}
+
+/*intro section*/
+.content {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, rgb(255, 255, 182), rgb(255, 239, 62), orange);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar .title {
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    color: rgb(16, 16, 16);
+}
+
+.top-bar .youtube-link a {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 1px solid #121212;
+    border-radius: 5px;
+    color: rgb(16, 16, 16);
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    align-items: flex-start;
+}
+
+.intro img {
+    width: 300px;
+    height: 400px;
+    margin-right: 20px;
+    padding-top: 20px;
+    border-color: white;
+    border-radius: 2px;
+}
+
+.text-content h1 {
+    font-size: 60px;
+    text-align: left;
+    margin: 0;
+    padding-top: 50px;
+    padding-inline: 30px;
+}
+
+.text-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    padding-inline: 30px;
+}
+
+/* Recipe Section */
+.recipe-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.recipe-section h1 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.ingredients-section, .instructions-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.ingredients-section h3, .instructions-section h3 {
+    font-size: 22px;
+    margin-top: 0;
+}
+
+ul, ol {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ul li, ol li {
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 40px 0;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .top-bar {
+    background: linear-gradient(to right, #333, #555, #777);
+}
+
+.dark-mode a {
+    color: #ddd;
+}
