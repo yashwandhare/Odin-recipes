@@ -5,12 +5,13 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 20px;
-    padding-inline: 100px
+    padding-inline: 5%;
+    box-sizing: border-box;
 }
 
-/*intro section*/
+/* Content Container */
 .content {
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -19,31 +20,21 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background: linear-gradient(to right, rgb(255, 255, 182), rgb(255, 239, 62), orange);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    height: 35px;
+    padding: 15px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
     position: relative;
-    overflow: hidden;
-  }
-  
-  .top-bar::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://img.freepik.com/free-vector/realistic-grainy-texture-design_23-2149250708.jpg?t=st=1722415633~exp=1722419233~hmac=f0ba1f8ecc2bbc313fd362dca9ae3c2062851d7437da046cd42e33e22f09be80&w=740');
-    opacity: 0.1; 
-    pointer-events: none; 
-    background-size: cover; 
-  }
-  
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
 .top-bar .title {
     font-family: 'Merriweather', serif;
     font-size: 24px;
-    color: rgb(16, 16, 16);
+    color: rgb(255, 255, 255);
+    flex: 1;
 }
 
 .top-bar .youtube-link a {
@@ -51,39 +42,81 @@ body {
     text-decoration: none;
     font-size: 18px;
     padding: 5px 10px;
-    border: 1px solid #121212;
+    border: 1px solid #ffffff;
     border-radius: 5px;
-    color: rgb(16, 16, 16);
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        justify-content: center;
+    }
+
+    .top-bar .title, .top-bar .youtube-link a {
+        flex: none;
+        margin: 5px 0;
+    }
+
+    .top-bar .youtube-link a {
+        margin-left: 0;
+    }
 }
 
 /* Intro Section */
 .intro {
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .intro img {
-    width: 350px;
-    height: 400px;
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    aspect-ratio: 4 / 3; /* Aspect ratio for consistent shape */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
     margin-right: 20px;
     padding-top: 20px;
-    border-color: white;
-    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.text-content {
+    flex: 1;
 }
 
 .text-content h1 {
-    font-size: 60px;
-    text-align: left;
+    font-size: 36px;
     margin: 0;
-    padding-top: 50px;
-    padding-inline: 30px;
+    padding-top: 20px;
+    text-align: left;
 }
 
 .text-content p {
     font-size: 18px;
     line-height: 1.6;
     margin-top: 20px;
-    padding-inline: 30px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .text-content h1, .text-content p {
+        text-align: center;
+        padding: 0;
+    }
 }
 
 /* Recipe Section */
@@ -95,7 +128,7 @@ body {
 }
 
 .recipe-section h1 {
-    font-size: 40px;
+    font-size: 32px;
     margin-top: 0;
 }
 

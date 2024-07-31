@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--tittle , link to font(Merriweather),Stylesheet-->
+    <!-- Title, link to font (Merriweather), Stylesheet -->
     <title>Thali.com</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/colored.png" type="image/png">
 </head>
 <body>
-    <!--top bar with social links and a toggle for dark mode-->
+    <!-- Top bar with social links and a toggle for dark mode -->
     <div class="top-bar">
         <div class="social-links">
             <a href="https://www.instagram.com" target="_blank">Instagram</a>
@@ -20,49 +21,63 @@
             <label for="theme-toggle">Dark Mode</label>
         </div>
     </div>
-<!--tittle and description-->
-    <h1>Thali.com</h1>
-    <p><b>"</b>Discover the rich and diverse flavors of Indian cuisine with Thali.com. Our website is your ultimate guide to traditional and modern Indian recipes, offering a delightful journey through the vibrant culinary traditions of India. Whether you're a seasoned cook or a beginner, you'll find a wide range of recipes, from classic dishes to contemporary twists, complete with easy-to-follow instructions and tips. Explore the spices, ingredients, and techniques that make Indian cooking unique, and bring the authentic taste of India to your kitchen. Join us at Thali.com and celebrate the art of Indian cooking!<b>"</b></p>
+    
+    <!-- Main content -->
+    <main>
+        <!-- Title and description -->
+        <h1>Thali.com</h1>
+        <p><strong>"</strong>Discover the rich and diverse flavors of Indian cuisine with Thali.com. Our website is your ultimate guide to traditional and modern Indian recipes, offering a delightful journey through the vibrant culinary traditions of India. Whether you're a seasoned cook or a beginner, you'll find a wide range of recipes, from classic dishes to contemporary twists, complete with easy-to-follow instructions and tips. Explore the spices, ingredients, and techniques that make Indian cooking unique, and bring the authentic taste of India to your kitchen. Join us at Thali.com and celebrate the art of Indian cooking!<strong>"</strong></p>
 
-    <hr>
-<!--top recipes and then a table to contain recipes-->
-    <h2>Top Recipes</h2>
-    <table>
-        <tr>
-            <!--entire td section contains a link with image and a tittle-->
-            <td>
-                <a href="Recipes/Butter_chiken.html">
-                    <img src="https://masalaandchai.com/wp-content/uploads/2022/03/Butter-Chicken.jpg" alt="Butter Chicken">
-                    <h4>Butter Chicken</h4>
-                </a>
-            </td>
-            <td>
-                <a href="Recipes/Garlic_naan.html">
-                    <img src="https://saltedmint.com/wp-content/uploads/2024/01/Garlic-Naan-Bread-1.jpg" alt="Garlic Naan">
-                    <h4>Garlic Naan</h4>
-                </a>
-            </td>
-            <td>
-                <a href="Recipes/Panner_butter_masala.html">
-                    <img src="https://myfoodstory.com/wp-content/uploads/2021/07/Paneer-Butter-Masala-3.jpg" alt="Paneer Butter Masala">
-                    <h4>Paneer Butter Masala</h4>
-                </a>
-            </td>
-            <td>
-                <a href="Recipes/Pav_bhaji.html">
-                    <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Instant-Pot-Mumbai-Pav-Bhaji.jpg" alt="Pav Bhaji">
-                    <h4>Pav Bhaji</h4>
-                </a>
-            </td>
-            <td>
-                <a href="Recipes/Samosa.html">
-                    <img src="https://www.tasteofhome.com/wp-content/uploads/2021/02/Samosas_EXPS_THJJ21_259895_B02_11_3b-64.jpg?fit=700%2C1024" alt="Samosa">
-                    <h4>Samosa</h4>
-                </a>
-            </td>
-        </tr>
-    </table>
+        <hr>
 
-    <hr>
+        <!-- Top recipes section -->
+        <h2>Top Recipes</h2>
+        <table>
+            <tr>
+                <!-- Each td contains a link with an image and a title -->
+                <td>
+                    <a href="Recipes/Butter_chiken.html">
+                        <img src="https://masalaandchai.com/wp-content/uploads/2022/03/Butter-Chicken.jpg" alt="Butter Chicken">
+                        <h4>Butter Chicken</h4>
+                    </a>
+                </td>
+                <td>
+                    <a href="Recipes/Garlic_naan.html">
+                        <img src="https://saltedmint.com/wp-content/uploads/2024/01/Garlic-Naan-Bread-1.jpg" alt="Garlic Naan">
+                        <h4>Garlic Naan</h4>
+                    </a>
+                </td>
+                <td>
+                    <a href="Recipes/Panner_butter_masala.html">
+                        <img src="https://myfoodstory.com/wp-content/uploads/2021/07/Paneer-Butter-Masala-3.jpg" alt="Paneer Butter Masala">
+                        <h4>Paneer Butter Masala</h4>
+                    </a>
+                </td>
+                <td>
+                    <a href="Recipes/Pav_bhaji.html">
+                        <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Instant-Pot-Mumbai-Pav-Bhaji.jpg" alt="Pav Bhaji">
+                        <h4>Pav Bhaji</h4>
+                    </a>
+                </td>
+                <td>
+                    <a href="Recipes/Samosa.html">
+                        <img src="https://www.tasteofhome.com/wp-content/uploads/2021/02/Samosas_EXPS_THJJ21_259895_B02_11_3b-64.jpg?fit=700%2C1024" alt="Samosa">
+                        <h4>Samosa</h4>
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+    </main>
+
+    <!-- Include JavaScript for theme toggle functionality -->
+    <script>
+        // Toggle dark mode
+        const toggleSwitch = document.getElementById('theme-toggle');
+        toggleSwitch.addEventListener('change', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
