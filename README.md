@@ -12,12 +12,13 @@ Welcome to the Indian Cuisine Recipes project! This project is a collection of r
 ## Project Structure
 
 - `index.html`: The main page listing all the recipes.
-- `butter_chicken.html`: Recipe for Butter Chicken.
+- `butter_chiken.html`: Recipe for Butter Chicken.
 - `garlic_naan.html`: Recipe for Garlic Naan.
 - `paneer_butter_masala.html`: Recipe for Paneer Butter Masala.
-- `Pav_bhaji.html`:Recipe for Pav bhaji.
-- `style.css`:css file for Homepage.
-- `Recipe_style.css`:css file for Recipes.
+- `Pav_bhaji.html`: Recipe for Pav bhaji.
+- `Samosa.html`: Recipe for Samosa.
+- `style.css`: css file for Homepage.
+- `Recipe_style.css`: css file for Recipes.
 
 ## How to View
 
