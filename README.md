@@ -16,6 +16,8 @@ Welcome to the Indian Cuisine Recipes project! This project is a collection of r
 - `garlic_naan.html`: Recipe for Garlic Naan.
 - `paneer_butter_masala.html`: Recipe for Paneer Butter Masala.
 - `Pav_bhaji.html`:Recipe for Pav bhaji.
+- `style.css`:css file for Homepage.
+- `Recipe_style.css`:css file for Recipes.
 
 ## How to View
 
