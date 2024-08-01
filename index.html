@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title, link to font (Merriweather), Stylesheet -->
     <title>Thali.com</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/colored.png" type="image/png">
+    <script src="script.js" defer></script> <!-- Added defer attribute for proper script loading -->
 </head>
 <body>
-    <!-- Top bar with social links and a toggle for dark mode -->
     <div class="top-bar">
         <div class="social-links">
             <a href="https://www.instagram.com" target="_blank">Instagram</a>
@@ -22,19 +21,13 @@
         </div>
     </div>
     
-    <!-- Main content -->
     <main>
-        <!-- Title and description -->
         <h1>Thali.com</h1>
         <p><strong>"</strong>Discover the rich and diverse flavors of Indian cuisine with Thali.com. Our website is your ultimate guide to traditional and modern Indian recipes, offering a delightful journey through the vibrant culinary traditions of India. Whether you're a seasoned cook or a beginner, you'll find a wide range of recipes, from classic dishes to contemporary twists, complete with easy-to-follow instructions and tips. Explore the spices, ingredients, and techniques that make Indian cooking unique, and bring the authentic taste of India to your kitchen. Join us at Thali.com and celebrate the art of Indian cooking!<strong>"</strong></p>
-
         <hr>
-
-        <!-- Top recipes section -->
         <h2>Top Recipes</h2>
         <table>
             <tr>
-                <!-- Each td contains a link with an image and a title -->
                 <td>
                     <a href="Recipes/Butter_chiken.html">
                         <img src="https://masalaandchai.com/wp-content/uploads/2022/03/Butter-Chicken.jpg" alt="Butter Chicken">
@@ -67,17 +60,7 @@
                 </td>
             </tr>
         </table>
-
         <hr>
     </main>
-
-    <!-- Include JavaScript for theme toggle functionality -->
-    <script>
-        // Toggle dark mode
-        const toggleSwitch = document.getElementById('theme-toggle');
-        toggleSwitch.addEventListener('change', () => {
-            document.body.classList.toggle('dark-mode');
-        });
-    </script>
 </body>
 </html>

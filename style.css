@@ -4,7 +4,7 @@ body {
   color: #101010;
   font-family: 'Merriweather', serif;
   margin: 0;
-  padding: 30px 40px; /* Increased padding for a more spacious layout */
+  padding: 30px 40px;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px; /* Increased padding and consistent with body */
+  padding: 15px 40px;
   background-color: #000000;
   color: #ffffff;
   transition: background-color 0.3s, color 0.3s;
@@ -108,9 +108,9 @@ table td {
 
 table img {
   width: 100%;
-  max-width: 200px; /* Ensuring all images have a maximum width */
-  height: 200px; /* Fixed height to make all images square */
-  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+  max-width: 200px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
 }
@@ -118,41 +118,41 @@ table img {
 /* Responsive Design */
 @media (max-width: 768px) {
   body {
-      padding: 20px; /* Adjusted padding for smaller screens */
+      padding: 20px;
   }
-  
+
   .top-bar {
       flex-direction: column;
       align-items: flex-start;
       padding: 10px;
   }
-  
+
   .top-bar .social-links {
       margin-bottom: 10px;
   }
-  
+
   .top-bar .toggle-switch {
       margin: 0;
   }
-  
+
   table {
       display: block;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
   }
-  
+
   table td {
       display: inline-block;
       width: 100%;
       box-sizing: border-box;
       padding: 10px;
   }
-  
+
   table img {
       width: auto;
       height: auto;
       max-width: 100%;
-      max-height: 150px; /* Adjust image height on smaller screens */
+      max-height: 150px;
   }
 }
 

@@ -7,6 +7,7 @@ body {
     padding: 20px;
     padding-inline: 5%;
     box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 /* Content Container */
@@ -76,8 +77,8 @@ body {
     width: 100%;
     max-width: 500px;
     height: 350px;
-    aspect-ratio: 4 / 3; /* Aspect ratio for consistent shape */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
     margin-right: 20px;
     padding-top: 20px;
     box-sizing: border-box;
@@ -170,9 +171,31 @@ hr {
 }
 
 .dark-mode .top-bar {
-    background: linear-gradient(to right, #333, #555, #777);
+    background-color: white;
+}
+
+.dark-mode .top-bar .title{
+    color: #000000;
 }
 
 .dark-mode a {
-    color: #ddd;
+    color: #000000;
+}
+
+.dark-mode .youtube-link a {
+    color: #000000;
+    border-color: #000000;
+}
+
+.dark-mode a:hover {
+    color: orange;
+  }
+  
+/* Dark Mode Recipe Section */
+.dark-mode .recipe-section {
+    background-color: #191919;
+}
+
+.dark-mode .ingredients-section, .dark-mode .instructions-section {
+    background-color: #191919;
 }
