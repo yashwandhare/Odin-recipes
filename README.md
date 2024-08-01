@@ -19,6 +19,7 @@ Welcome to the Indian Cuisine Recipes project! This project is a collection of r
 - `Samosa.html`: Recipe for Samosa.
 - `style.css`: css file for Homepage.
 - `Recipe_style.css`: css file for Recipes.
+- `script.js`: js for website.
 
 ## How to View
 

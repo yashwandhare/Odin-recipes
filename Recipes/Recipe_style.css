@@ -50,6 +50,10 @@ body {
     white-space: nowrap;
 }
 
+.top-bar .youtube-link a:hover{
+    color: orange;
+}
+
 @media (max-width: 768px) {
     .top-bar {
         justify-content: center;
